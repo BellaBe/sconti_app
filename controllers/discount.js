@@ -1,8 +1,8 @@
 module.exports = {
   index(req, res){
-    res.render('product');
+    res.render('discount');
   },
   list(req, res){
-    escape.render('products')
+    res.render('discounts');
   }
-}
+};

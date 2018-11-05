@@ -11,15 +11,20 @@
 </head>
 
 <body>
-  {{!-- wrapper | start --}}
-  <div class="wrapper">
+  {{!-- grid/start --}}
+  <div class="grid">
     <nav class="nav">
-      <div class="row">
-        <p>Stai visualizzando le offerte di Mestre, per cambiare la citta' clicca <a href="">qui</a></p>
-      </div>
-      <div class="row flex">
-        <div class="brand">
-          <h1 class="">Veneto Sconti</h1>
+      <div class="row d-flex-row-sb">
+        <div class="d-flex-row-sb">
+          <div class="brand">
+           <a href="/"><h1 class="">Veneto Sconti</h1></a> 
+          </div>
+          <ul class="navbar">
+            <li><a class="nav-link" href="/coupons">Migliori offerte</a></li>
+            <li><a class="nav-link" href="/categories">Categorie</a></li>
+            <li><a class="nav-link" href="/discounts">Sconti</a></li>
+            <li><a class="nav-link" href="/cities">Citta'</a></li>
+          </ul>
         </div>
         <div class="search">
           <form>
@@ -29,107 +34,15 @@
         </div>
       </div>
       <div class="row">
-        <ul class="navbar">
-          <li ><a class="nav-link" href="">Categorie</a></li>
-          <li><a class="nav-link" href="">Negozi</a></li>
-          <li><a class="nav-link" href="">Sconti</a></li>
-          <li><a class="nav-link" href="">Citta'</a></li>
-        </ul>
+        <p>Stai visualizzando le offerte di Mestre, per cambiare la citta' clicca <a href="">qui</a></p>
       </div>
     </nav>
-    {{!-- top container|start --}}
-    <section class="top-container">
-      <header class="header">
-        <h1>Sconti nel Veneto</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </header>
-      <a href="" class="top-box top-box-a">
-        <h4>Pubblicita'</h4>
-        <p class="price">€300/mese</p>
-        <a href="" class="btn">Acquista</a>
-      </a>
-      <a href="" class="top-box top-box-b">
-        <h4>Pubblicita'</h4>
-        <p class="price">€300/mese</p>
-        <a href="" class="btn">Acquista</a>
-      </a>
-    </section>
-    {{!-- top container|start --}}
-
-    {{!-- section|offers --}}
-    <section class="offers boxes">
-      <div class="section-header">
-        <h2>Miglieri offerte</h2>
-        <p>Selezione di offerte migliori per te disponibili a <span>Mestre</span> </p>
-      </div>
-      <div class="box">
-        <h3>Intimissimi</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dicta!</p>
-      </div>
-      <div class="box">
-        <h3>Intimissimi</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dicta!</p>
-      </div>
-      <div class="box">
-        <h3>Intimissimi</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dicta!</p>
-      </div>
-      <div class="box">
-        <h3>Intimissimi</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, dicta!</p>
-      </div>
-    </section> {{!-- section|offers --}}
-    <section class="shops">
-      <div class="section-header">
-        <h2>Negozi piu' ricercati</h2>
-        <p>Selezione di negozi piu' ricercati a <span>Mestre</span> </p>
-      </div>
-
-    </section>
-    <section class="top">
-      <div class="box">Offerte top</div>
-      <div class="box">Offerte top</div>
-      <div class="box">Offerte top</div>
-
-    </section>
-    <section class="discount">
-      <h2>Sonti disponibili</h2>
-      <p>Scegli tuo sconto preferito</p>
-      <div class="box"> <a href="">Sconto del 10%</a></div>
-      <div class="box"> <a href="">Sconto del 20%</a></div>
-      <div class="box"> <a href="">Sconto del 30%</a></div>
-      <div class="box"> <a href="">Sconto del 40%</a></div>
-      <div class="box"> <a href="">Sconto del 50%</a></div>
-      <div class="box"> <a href="">Sconto da 60%</a></div>
-
-    </section>
-    <section class="cities">
-      <h2>Piazze attive nel Veneto</h2>
-      <p>Scegli citta' piu' vicina a te</p>
-      <div class="box">
-        <h3>Venezia</h3>
-        <a href="">20 offerte disponibili</a>
-      </div>
-    </section>
-    {{!-- newsletter|start --}}
-    <section class="newsletter">
-      <form action="/emails" method="POST">
-        <input type="text" placeholder="Inserisci tua email">
-        <button type="submit"><i <i class="icon ion-md-mail"></i></button>
-      </form>
-    </section> {{!-- newsletter|start --}}
-
-
-    <footer>
-      <p>&copy;Veneto World 2018</p>
-      <p>Contatti: info@scontiveneto.com</p>
+    {{{body}}}
+    <footer class="footer">
+      <p>&copy; Veneto World 2018</p>
+      <p>Contatti: <a href="mailto:info@scontiveneto.com"></a> info@scontiveneto.com</p>
     </footer>
-
-  </div> {{!-- wrapper | end --}}
-
-
-
-
+  </div> {{!-- grid/end --}}
   <script type="text/javascript" src="/public/js/scripts.js"></script>
 </body>
 
