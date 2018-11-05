@@ -183,7 +183,12 @@ img{
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 250px;
   grid-gap: 0.5em;
-  
+}
+.grid-6-small{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 0.5em;
 }
 .box{
   background-color: #fff;
@@ -192,11 +197,35 @@ img{
 .grid-4{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 50px;
+  grid-gap: 1em;
+
+}
+.discount-box{
+  background-color: #fff; 
+  box-shadow: var(--shadow); 
+  padding: 1em;
 }
 .grid-3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  grid-gap: 0.8em;
+  overflow: hidden;
 }
+.grid-offer-1{
+  position: relative;
+}
+.text-block{
+  position: absolute;
+  bottom: 0;
+  color:white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 1em;
+}
+
 .footer{
   height: 4em;
   display: flex;
@@ -241,7 +270,6 @@ img{
   border-right: 4px solid var(--primary-color);
 }
 .tabcontent{
-  padding: 0px 1em;
   border: 1px solid #ccc;
   border-left: none;
   display: none;

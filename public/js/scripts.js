@@ -11,3 +11,4 @@ function openCategory(e, categoryName){
   console.log(e.currentTarget);
   e.currentTarget.className += ' active';
 }
+document.getElementById('defaultOpen').onclick()
