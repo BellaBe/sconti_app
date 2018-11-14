@@ -1,3 +1,5 @@
+//homapage tabs
+
 function openCategory(e, categoryName){
   const tabcontent = document.getElementsByClassName('tabcontent');
   for(let i = 0; i < tabcontent.length; i++){
@@ -11,4 +13,20 @@ function openCategory(e, categoryName){
   console.log(e.currentTarget);
   e.currentTarget.className += ' active';
 }
-document.getElementById('defaultOpen').onclick()
+document.getElementById('defaultOpen').onclick();
+
+// Dropdown
+
+const dropbtn = document.getElementsByClassName('dropbtn');
+for(let i = 0; i < dropbtn.length; i++){
+  dropbtn[i].addEventListener('click', ()=>{
+    console.log(dropbtn)
+    const dropdownContent = this.nextElementSibling;
+    console.log(dropdownContent);
+    if(dropdownContent.style.display === 'block'){
+      dropdownContent.style.display === 'none';
+    }else{
+      dropdownContent.style.display === 'block';
+    }
+  })
+}

@@ -1,0 +1,73 @@
+/* pages layout */
+
+.grid-landing{
+  margin-left: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  'nav'
+  'main'
+  'footer'
+}
+
+.grid-landing__rows{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'top-container'
+  'offers'
+  'shops'
+  'top-offers'
+  'discount'
+  'cities'
+  'newsletter';
+}
+.header{
+  grid-area: header;
+}
+.grid-main{
+  display: grid;
+  grid-template-areas: 
+  'nav nav' 
+  'aside-menu main-content'
+  'footer footer';
+  grid-template-columns: 200px 1fr;
+}
+.nav{
+  grid-area: nav;
+}
+.footer{
+  grid-area: footer
+}
+
+
+
+
+
+
+
+.grid-page{
+  display: grid;
+  grid-template-areas: 
+  'navbar navbar' 
+  'aside main' 
+  'footer';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 70px;
+  grid-gap: 1em;
+}
+.grid-page > .nav{
+  grid-area: navbar;
+}
+.grid-page> .main-content{
+  grid-area: main;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+.grid-page> .aside-menu{
+  grid-area: aside;
+}
+.grid-page> .footer{
+  grid-area: footer;
+}

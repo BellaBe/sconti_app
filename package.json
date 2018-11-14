@@ -11,6 +11,7 @@
   "author": "BellaBe <bella.belgarokova@hotmail.com> (http://www.bellabelgarokova.com/)",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "errorhandler": "^1.5.0",
@@ -18,6 +19,7 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^3.0.0",
     "moment": "^2.22.2",
+    "mongoose": "^5.3.10",
     "morgan": "^1.9.1",
     "multer": "^1.4.1"
   }

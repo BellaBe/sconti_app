@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'partials/dropdown.css';
+@import 'partials/grid.css';
+@import 'partials/layout.css';
+@import 'partials/search.css';
 
 :root{
   --primary-color: #511A64;
@@ -7,6 +11,7 @@
   --text-color-light: #fff;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
+
 
 *, *::before, *::after{
   padding: 0;
@@ -18,6 +23,7 @@ html{
   font-size: 14px;
   color: var(--text-color);
 }
+
 body{
   background: #ccc;
   line-height: 1.4;
@@ -25,23 +31,7 @@ body{
 
 }
 
-.grid{
-  margin-left: 1em;
-  margin-right: 1em;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas: 
-  'nav'
-  'header'
-  'top-container'
-  'offers'
-  'shops'
-  'top-offers'
-  'discount'
-  'cities'
-  'newsletter'
-  'footer'
-}
+
 .header{
   height: 200px;
   display: flex;
@@ -121,6 +111,9 @@ body{
 a{
   text-decoration: none;
   color: var(--accent-color);
+}
+li{
+  list-style-type: none;
 }
 
 .btn{

@@ -11,38 +11,53 @@
 </head>
 
 <body>
-  {{!-- grid/start --}}
-  <div class="grid">
-    <nav class="nav">
-      <div class="row d-flex-row-sb">
-        <div class="d-flex-row-sb">
-          <div class="brand">
-           <a href="/"><h1 class="">Veneto Sconti</h1></a> 
-          </div>
-          <ul class="navbar">
-            <li><a class="nav-link" href="/coupons">Migliori offerte</a></li>
-            <li><a class="nav-link" href="/categories">Categorie</a></li>
-            <li><a class="nav-link" href="/discounts">Sconti</a></li>
-            <li><a class="nav-link" href="/cities">Citta'</a></li>
+  <div class="grid-main">
+    {{> navbar}}
+    <aside class="aside-menu">
+      <ul>
+        <li class="dropdown">
+          <button class="dropbtn">Categorie</button>
+          <ul class="drop_content">
+            <li class="drop_link"><a href="">Moda</a></li>
+            <li class="drop_link"><a href="">Casalinghi</a></li>
+            <li class="drop_link"><a href="">Viaggi</a></li>
+            <li class="drop_link"><a href="">Salute e Bellezza</a></li>
+            <li class="drop_link"><a href="">Ristoranti</a></li>
           </ul>
-        </div>
-        <div class="search">
-          <form>
-            <input type="search" placeholder="Cerca prodotto, sconto o negozio">
-            <button>Cerca</button>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <p>Stai visualizzando le offerte di Mestre, per cambiare la citta' clicca <a href="">qui</a></p>
-      </div>
-    </nav>
-    {{{body}}}
+        </li>
+        <li class="dropdown">
+          <button class="dropbtn">Sconti</button>
+          <ul class="drop_content">
+            <li class="drop_link"><a href="">Sconto del 10%</a></li>
+            <li class="drop_link"><a href="">Sconto del 20%</a></li>
+            <li class="drop_link"><a href="">Sconto del 30%</a></li>
+            <li class="drop_link"><a href="">Sconto del 40%</a></li>
+            <li class="drop_link"><a href="">Sconto del 50%</a></li>
+            <li class="drop_link"><a href="">Sconto del 60%</a></li>
+            <li class="drop_link"><a href="">Sconto del 70%</a></li>
+            <li class="drop_link"><a href="">Svendite magazzino</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropbtn">Negozi</button>
+          <ul class="drop_content">
+            <li class="drop_link"><a href="">Negozio 1</a></li>
+            <li class="drop_link"><a href="">Negozio 2</a></li>
+            <li class="drop_link"><a href="">Negozio 3</a></li>
+            <li class="drop_link"><a href="">Negozio 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      {{{body}}}
+    </main>
+    
     <footer class="footer">
       <p>&copy; Veneto World 2018</p>
       <p>Contatti: <a href="mailto:info@scontiveneto.com"></a> info@scontiveneto.com</p>
     </footer>
-  </div> {{!-- grid/end --}}
+  
   <script type="text/javascript" src="/public/js/scripts.js"></script>
 </body>
 
