@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CouponSchema = new Schema({
-  _id: Schema.Types.ObjectId,
+  _id: mongoose.Schema.Types.ObjectId,
  title: {type: String, required: true},
  description: {type: String, required: true},
  details: {
@@ -11,14 +11,14 @@ const CouponSchema = new Schema({
   endDate: {type: Date, required: true},
   terms: {type: String},
   image: {type: String},
-  thumbnail: {type: String},
+  logo: {type: String},
   isExclusive: {type: Boolean, default: false},
   isPublished: {type: Boolean}
  },
- shop:{type: Schema.Types.ObjectId, ref: 'Shop', required: true},
- product:{type: Schema.Types.ObjectId, ref: 'Product', required: true},
- category: {type: Schema.Types.ObjectId, ref: 'Category', required: true},
- discount: {type: Schema.Types.ObjectId, ref: 'Discount', required: true},
+ shop_id:{type: mongoose.Schema.Types.ObjectId, ref: 'Shop', required: true},
+ product_id:{type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true},
+ category_id: {type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true},
+ discount_id: {type: mongoose.Schema.Types.ObjectId, ref: 'Discount', required: true},
 });
 
 CouponSchema

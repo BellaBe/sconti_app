@@ -4,15 +4,7 @@ const Schema = mongoose.Schema;
 const CitySchema = new Schema({
   _id: mongoose.Schema.Types.ObjectId,
   name: {type: String, required: true},
-  details: {
-    town:{type: String},
-    city:{type: String},
-    province: {type: String},
-    region: {type: String, required: true},
-    country: {type: String, required: true}
-},
-  shops: [{type: mongoose.Schema.Types.ObjectId, ref: 'Shop'}]
-
+  coupon_id: [{type: mongoose.Schema.Types.ObjectId, ref: 'Coupon'}]
 });
 
 CitySchema

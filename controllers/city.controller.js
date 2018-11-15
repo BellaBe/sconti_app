@@ -1,7 +1,8 @@
-const city = require('../models/city.model')
+const { City } = require('../models/index');
+const mongoose = require('mongoose');
 
 exports.city_list = (req, res)=>{
-  res.send('NOT IMPLEMENTED: cities list')
+  res.render('cities')
 }
 
 exports.city_detail = (req, res)=>{

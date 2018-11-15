@@ -1,4 +1,5 @@
-const discount = require('../models/discount.model')
+const { Discount } = require('../models/index');
+const mongoose = require('mongoose');
 
 exports.discount_list = (req, res)=>{
   res.send('NOT IMPLEMENTED: discount list')

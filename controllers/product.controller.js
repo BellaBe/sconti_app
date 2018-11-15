@@ -1,4 +1,5 @@
-const product = require('../models/product.model');
+const {Product} = require('../models/index');
+const mongoose = require('mongoose');
 
 exports.product_list = (req, res)=>{
   res.send('NOT IMPLEMENTED: product list')

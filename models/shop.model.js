@@ -6,12 +6,15 @@ const ShopSchema = new Schema({
   name: {type: String, required: true},
   address: {
     street: String,
-    cityId: {type: mongoose.Schema.Types.ObjectId, ref: 'City', require: true} ,
-   
+    town:{type: String},
+    city:{type: String},
+    province: {type: String},
+    region: {type: String, required: true},
+    country: {type: String, required: true}
   },
-  contactId: {type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
-  couponId: [{type: mongoose.Schema.Types.ObjectId, ref: 'Coupon'}],
-  image: String,
+  contact_id: {type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
+  image: {type: String},
+  thumbnail: {type: String},
   logo: {type: String}
 });
 

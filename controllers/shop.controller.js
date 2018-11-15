@@ -1,11 +1,12 @@
-const shop = require('../models/shop.model')
+const {Shop} = require('../models/index');
 
 exports.shop_list = (req, res)=>{
   res.send('NOT IMPLEMENTED: shop list')
 }
 
 exports.shop_detail = (req, res)=>{
-  res.send('NOT IMPLEMENTED: shop detail' + req.params.id)
+  //res.send('NOT IMPLEMENTED: shop detail' + req.params.id)
+  res.render('shop')
 }
 
 exports.shop_create_get = (req, res)=>{

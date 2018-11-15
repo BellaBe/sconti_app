@@ -1,5 +1,5 @@
-const Category = require('../models/category.model');
 const mongoose = require('mongoose');
+const { Category }  = require('../models/index');
 
 exports.category_list = (req, res)=>{
   Category.find()
@@ -19,7 +19,7 @@ exports.category_list = (req, res)=>{
         }
       })
     }
-    res.status(200).json({response})
+    res.status(200).render('categories', {response});
   })
   .catch(err=>{
     console.log(err);
@@ -40,7 +40,7 @@ exports.category_detail = (req, res)=>{
           request: {
             type: 'GET',
             description: 'GET_ALL_CATEGORIES',
-            url: 'http://localhost/categories'
+            url: 'http://localhost:3300/categories'
           }
         })
       }else{
@@ -96,7 +96,14 @@ exports.category_delete_post = (req, res)=>{
   .exec()
   .then(result=>{
     console.log(result);
-    res.status(200).json(result);
+    res.status(200).json({
+      message: 'Product deleted',
+      request: {
+        type: 'POST',
+        url: 'http://localhost:3300/categories',
+        body: {name: 'String', price: 'Number'}
+      }
+    });
   })
   .catch(err=>{
     console.log(err);
@@ -122,7 +129,7 @@ exports.category_update_post = (req, res)=>{
       message: 'Category updated',
       request: {
         type: 'UPDATE',
-        url: 'http://localhost/categories' + id
+        url: 'http://localhost:3300/categories' + id
       }
     })
   })

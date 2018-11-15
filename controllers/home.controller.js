@@ -1,9 +1,6 @@
-const Coupon = require('../models/coupon.model');
-const City = require('../models/city.model');
-const Category = require('../models/category.model');
-const Discount = require('../models/discount.model');
-
+const {Coupon, City, Category, Discount } = require('../models/index');
 const async = require('async');
+const mongoose = require('mongoose');
 
 
 

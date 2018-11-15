@@ -1,5 +1,6 @@
-const Coupon = require('../models/coupon.model');
+const {Coupon} = require('../models/index');
 const async = require('async');
+const mongoose = require('mongoose');
 
 exports.coupon_list = (req, res, next)=>{
 
@@ -29,10 +30,10 @@ exports.coupon_detail = (req, res, next)=>{
 };
 
 exports.coupon_create_get = (req, res)=>{
-  res.send('NOT IMPLEMENTED: coupon create GET')
+  res.render('coupon_create');
 }
 exports.coupon_create_post = (req, res)=>{
-  res.send('NOT IMPLEMENTED: coupon create POST')
+  res.send('NOT IMPLEMENTED: coupon delete GET')
 }
 exports.coupon_delete_get = (req, res)=>{
   res.send('NOT IMPLEMENTED: coupon delete GET')

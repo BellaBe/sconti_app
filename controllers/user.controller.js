@@ -1,4 +1,4 @@
-const user = require('../models/user.model');
+const {User} = require('../models/index');
 
 exports.user_list = (req, res)=>{
   res.send('NOT IMPLEMENTED: user list')
