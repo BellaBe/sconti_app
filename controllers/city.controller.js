@@ -10,13 +10,13 @@ exports.city_detail = (req, res)=>{
 }
 
 exports.city_create_get = (req, res)=>{
-  res.send('NOT IMPLEMENTED: city create GET')
+  res.send('NOT IMPLEMENTED: city create GET');
 }
 exports.city_create_post = (req, res)=>{
-  res.send('NOT IMPLEMENTED: city create POST')
+  res.send('NOT IMPLEMENTED: city create POST');
 }
 exports.city_delete_get = (req, res)=>{
-  res.send('NOT IMPLEMENTED: city delete GET')
+  res.send('NOT IMPLEMENTED: city delete GET');
 }
 exports.city_delete_post = (req, res)=>{
   res.send('NOT IMPLEMENTED: city delete POST')

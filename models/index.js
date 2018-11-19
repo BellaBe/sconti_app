@@ -1,15 +1,3 @@
-const mongoose = require('mongoose');
-
-const mongoDB = 'mongodb://bellabe:Bell5221@ds155833.mlab.com:55833/sconti_app';
-
-mongoose.connect(mongoDB, { useNewUrlParser: true })
-.then(()=>{
-  'Now connected to MongoDB';
-})
-.catch(err => console.error('Something went wrong', err));
-
-mongoose.Promise = global.Promise;
-const db = mongoose.connection;
 
 
 module.exports={

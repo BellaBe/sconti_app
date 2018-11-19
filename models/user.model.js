@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('../libs/mongoose');
 const Schema = mongoose.Schema;
 const UserSchema = new Schema({
   _id: mongoose.Schema.Types.ObjectId, 
